@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routing, appRoutingProviders } from './app.routing';
 
 import { HeadbarComponent } from './components/shared/headbar/headbar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -20,7 +21,8 @@ import { HomePage } from './pages/home-page/home-page';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [HomePage]
